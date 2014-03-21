@@ -1,0 +1,14 @@
+#!/usr/bin/python
+#!encoding:UTF-8
+import modulo
+valores = (10**1, 10**2, 10**3, 10**4, 10**5, 10**6, 10**7, 10**8)
+l = []
+for valor in valores:
+  j = modulo.aproximacion (valor)
+  l = l + [j]
+print l
+  
+# Cuando introduzco el número 200000000 ya muestra un error de memoria, con lo cual,podemos afirmar que es el número máximo de valores que podemos introducir.
+# Los elementos de la t-upla no los podemos definir en notación científica, porque los recibe como un número real, y nosotros en modulo habíamos declaro n de tipo entero. Al modificar en módulo n = int(nn), transforma el número introducido a tipo entero, con lo que sí recibe números reales. 
+# La extensión .pyc permite llamar al documento de una forma más rápida que con .py, pero no ahorra nada de tiempo en relación a la interpretación.
+# Para poder calcular el tiempo necesitamos de una función.
